@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int square(int n)
+{
+    int x;
+    while(n!=-1)
+    {
+        cin>>n;
+        if(n!=-1)
+        {
+            x=n*n;
+        }
+        else
+        {
+        cout<<"invalid input";
+        break;
+        }
+        cout<<x<<endl;
+    }
+    
+    return 0;
+}
+
+int main()
+{
+    int n;
+    square(n);
+}
