@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int sum(int n)
+{
+    int p,q,r,s;
+    p=n/100;
+    q=n%100;
+    r=q/10;
+    s=q%10;
+    cout<<p+r+s;
+    return 0;
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    sum(n);
+}
