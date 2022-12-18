@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+int max(int m,int n)
+{
+    int i,j,k=0;
+    int a[m][n];
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            cout<<a[i][j]<<" ";
+        }cout<<endl;
+    }
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            k=k+a[i][j];
+        }
+    }
+    if(k==0)
+            {
+                cout<<"The matrix is NULL";
+            }
+            else
+            cout<<"The matrix is NOT NULL";
+    
+    return 0;
+}
+int main()
+{
+    int m,n;
+    cin>>m>>n;
+    cout<<"The matrix is"<<endl;
+    max(m,n);
+    
+}
