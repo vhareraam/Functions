@@ -1,0 +1,19 @@
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+using namespace std;
+float dis(float a,float b,float c,float d)
+{
+    float n,x,y,z;
+    x=(c-a)*(c-a);
+    y=(d-b)*(d-b);
+    n=sqrt(x+y);
+    return n;
+}
+int main()
+{
+    float a,b,c,d,e;
+    cin>>a>>b>>c>>d;
+    e=dis(a,b,c,d);
+    cout<<fixed<<setprecision(2)<<"Distance between the 2 points is "<<e;
+}
