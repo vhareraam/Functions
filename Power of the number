@@ -1,0 +1,14 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int power(int n,int a)
+{
+    cout<<n<<" to the power "<<a<<" is "<<pow(n,a);
+    return 0;
+}
+int main()
+{
+   int n,a;
+   cin>>n>>a;
+   power(n,a);
+}
